@@ -19,6 +19,6 @@ function validate(event){
         error.textContent ="";
         let form = document.querySelector("form");
         form.reset();
-        window.location.href="index.html";
+        window.location.href="bookStore.html";
     }
 }
