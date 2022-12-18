@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    overflow:hidden;
+}
+body{
+    background-color: rgb(228, 226, 250);
+    
+}
+
+ul{
+    list-style: none;
+    display:flex;
+  
+   padding: 5px 5px;
+}
+
+nav{
+    background-color: rgb(127, 123, 205);
+    border-radius: 2px;
+}
+.navigation,.navigation1{
+    padding :14px 14px;
+}
+.navigation:hover,.navigation1:hover,.active{
+      color:black;
+      /* background-color: white; */
+     
+      font-weight:bold;
+      cursor: pointer;
+      
+    
+}
+#search{
+    display: flex;
+    position: absolute;
+    right: 8rem;
+    top: 0.7rem;
+    margin:2px 2px;
+    padding:3px 4px;  
+}
+input[type="search"]{
+    border:2px solid grey;
+   border-radius: 8px; 
+   margin:2px 2px;
+   padding:3px 4px;  
+}
+label[for="search"]{
+    margin:2px 2px;
+   padding:3px 4px;  
+}
+.heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:25px;
+}
+.heading1{
+    margin:7px;
+}
+.form-group{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} 
+.form{
+    border: 2px solid rgb(127, 123, 205);
+    box-shadow: 10px 15px 20px rgb(127, 123, 205);
+}
+label{
+    padding:2px 2px;
+    margin:3px 12px;
+}
+.text input{
+    width: 326px;
+    margin: 12px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 31px;
+}
+.radio{
+    position: relative;
+    left: 4.4rem;
+}
+#btn{
+    background-color: rgb(127, 123, 205);
+    border-radius: 3px;
+    width: 78px;
+    height: 28px;
+    margin: 12px 12px;
+}
+.table{
+   
+    margin: 21px 21px;
+    width: 70%;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+  
+  th {
+    background-color: rgb(127, 123, 205);
+    color: white;
+  }
+  
+  th,
+  td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  #message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .btn1{
+    background-color: rgb(218, 79, 79);
+    border:2px solid grey;
+    border-radius: 3px;
+    width: 78px;
+    height: 28px;
+    margin: 12px 12px;
+  }
+  #edit{
+    background-color: green;
+    border:2px solid grey;
+    border-radius: 3px;
+    width: 78px;
+    height: 28px;
+    margin: 12px 12px;
+  }
+ input#authorname{
+    margin: 12px 5px;
+ }
+ input#friction{
+    margin:-3px;
+ }
+@media screen and (max-width:800px){
+    .heading{
+        margin:12px 10px;
+    }
+    .heading1{
+        margin-top:9px;
+    }
+    #search{
+        top: 0.44rem;
+        right: 2rem;
+    }
+    .table{
+        
+        margin:5px 5px;
+    }
+    td{
+        padding:3px;
+        width:120px;
+    }
+    .btn1,#edit{
+      margin:3px 3px;
+    }
+    .navigation,.navigation1{
+        padding:12px 12px;
+    }
+input[type="search"]{
+    margin:1px 2px;
+}
+input#authorname{
+    margin: 12px 5px;
+ }
+input#friction{
+    margin:-3px;
+ }
+
+}
+
+@media screen and (max-width:630px){
+
+.navigation1{
+    display:none;
+   
+}
+label {
+    padding: 1px 1px;
+    margin: 2px 3px;
+}
+.text input {
+    margin: 8px 6px;  
+        width: 257px;
+}
+input#authorname{
+    margin: 1px 4px;
+ }
+ input#friction{
+    margin-left: 16px;
+    margin-top:4px;
+ }
+ #navbar{
+    position:relative;
+    width:100vw;
+ }
+ .heading{
+    font-size:small;
+ }
+ .heading1{
+    margin:12px 6px;
+    font-size:small;
+ }
+ table#bookStore.table{
+    width:90%;
+ }
+ #search{
+    top: 0.44rem;
+    right: 0.3rem;
+    margin: 2px 0px;
+    padding: 2px 0px;
+}
+  
+}
+@media screen and (max-width:350px){
+.form{
+    width:295px;
+}
+
+}

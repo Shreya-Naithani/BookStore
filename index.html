@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+   
+   
+    <title>library Management</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul id="innav">
+          <li class="navigation active" id="Home">Home</li>
+          <li class="navigation1" id="Contact">About Us</li>
+          <li class="navigation1" id="About">Contact Us</li>
+          <li class="navigation1" id="students">Books</li>
+          <div id="search">
+            <label class="search" for="search">Search:</label>
+            <input id="searchtxt"placeholder="Search here by name🔍" type="search" />
+          </div>
+        </ul>
+      </nav>
+     
+    </header>
+    <main>
+      <div class="heading">
+        <h1>Book Store</h1>
+        <hr />
+      </div>
+      <div id="message">
+        <strong></strong> 
+    </div>
+      <form id="libraryform">
+        <div class="form-group">
+          <div class="form">
+            <div class="text">
+              <label for="bookname"><b>Name:</b></label>
+              <input required id="bookname" placeholder="Book Name" type="text" /><span class=" error"> </span><br />
+              <label for="authorname"><b>Author:</b></label>
+              <input
+                id="authorname"
+                placeholder="Author Name"
+                type="text"
+                required
+              /><span class="error"></span><br />
+            </div>
+
+            <label for="type"><b>Type:</b></label>
+            <input  name="type" value="friction" id="friction" type="radio" />
+            <label for="friction">friction</label><br />
+            <div class="radio">
+              <input
+                name="type"
+                value="programming"
+                id="programming"
+                type="radio"
+              />
+              <label for="programming">computer programming</label><br />
+              <input name="type" value="maths" id="maths" type="radio" />
+              <label for="maths">maths</label><br />
+            </div>
+            <button id="btn">Add Book</button>
+          </div>
+        </div>
+      </form>
+      <div class="heading1">
+        <h1 >Your Books</h1><hr>
+        </div>
+    
+      <table id="bookStore"class="table">
+        <div class="tables">
+        <thead>
+          <tr>
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">Name</th>
+            <th scope="col">Author</th>
+            <th scope="col">Type</th>
+            <th>Delete/Edit</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+          <tr>
+            <td class="row">Mark</td>
+            <td class="row">Otto</td>
+            <td class="row">friction</td>
+            <td class="row"> <button class="abc btn1" id="${index}"onclick="deleteNode(this)">Delete</button>
+            <button class="abc" onclick ="editRow(this)" id="edit">Edit</button></td>
+          </tr>
+        </tbody>
+    </div>
+      </table>
+    </main>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
